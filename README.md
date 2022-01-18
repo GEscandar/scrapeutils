@@ -6,7 +6,7 @@ This contains some simple python modules to simplify web scraping. It's purpose 
 This uses BeautifulSoup to find tags when scraping, so the idea is to define whatever you'd need to pass to its finding methods. Whatever is in the 'container' key gets 
 passed first to the `find` method, and whatever is in the 'elements' key gets passed right after to the `find_all` method.
 ```
-from scraputils.core.models import Model
+from scrapeutils.core.models import Model
 
 class UserAgentList(Model):
     _html_map = {
@@ -20,7 +20,7 @@ class UserAgentList(Model):
 
 Then, once you've defined your model, you can just get right to scraping.
 ```
-from scraputils.core.scrapers import BaseScraper
+from scrapeutils.core.scrapers import BaseScraper
 
 url = 'https://user-agents.net/random'
 scraper = BaseScraper(url)
