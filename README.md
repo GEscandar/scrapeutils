@@ -26,4 +26,6 @@ url = 'https://user-agents.net/random'
 scraper = BaseScraper(url)
 resp = await scraper.scrape_url(UserAgentList, '/')
 ```
+The response from this example should be a list of strings, which you will be able to access by referencing `resp.user_agents`.
+
 You can check out the other models for more detailed examples.
